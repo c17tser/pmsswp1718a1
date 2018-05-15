@@ -1,4 +1,52 @@
 # Το αρχείο Turtle του λεξιλογίου RDFS που περιγράφει
 # τις κλάσεις και τις ιδιότητες του ωρολογίου προγράμματος.
 
+@prefix : <http://example.com/owl/families/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix uni: <https://ionio.gr/> .
+@prefix foaf: <xmlns.com/foaf/0.1/> .
+
+
+
+ :Lecturer  rdf:type owl:Class .
+ :Lecturer  rdfs:comment
+          "Represents the set of all Lecturers."^^xsd:string .
+ :hasModule rdf:type owl:ObjectProperty .
+
+ :hasModule rdfs:domain :Lecturer ;
+            rdfs:range xsd:string .
+
+ :Lecturer  rdfs:subClassOf    foaf:Person . 
+ :Lecturer   rdfs:range    :Lecture .
+
+ :Lecture  rdf:type owl:Class .
+ :Lecture  rdfs:comment
+          "Represents the set of all Lectures."^^xsd:string .
+
+ :hasTime rdfs:domain :Lecture ;
+            rdfs:range xsd:time .
+
+
+ :Room  rdf:type owl:Class .
+ :Room  rdfs:comment
+          "Represents the set of all Teaching Rooms."^^xsd:string .
+
+ :roomName rdfs:domain :Room;
+           rdfs:range xsd:string .
+ 
+
+ :Module  rdf:type owl:Class .
+ :Module  rdfs:comment
+          "Represents the set of all Modules."^^xsd:string .
+
+ :moduleName rdfs:domain :Module;
+           rdfs:range xsd:string .
+     
+ uni:host   rdfs:range    :Module .
+
+
+
 
