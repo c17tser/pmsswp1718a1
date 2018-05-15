@@ -1,4 +1,24 @@
 # Το αρχείο N-Triples με τα δεδομένα του ωρολογίου προγράμματος
 # και τις δηλώσεις rdf:type για κάθε οντότητα.
 
-
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dilab77.ionio.gr/swp/c17gram/vocab#Lecture> . 
+<http://dilab77.ionio.gr/swp/c17gram/resource/Κομιανός> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dilab77.ionio.gr/swp/c17gram/vocab#Lecturer> . 
+<http://dilab77.ionio.gr/swp/c17gram/resource/Ψυχαγωγικό%20Λογισμικό> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dilab77.ionio.gr/swp/c17gram/vocab#Module> . 
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dilab77.ionio.gr/swp/c17gram/vocab#Lecture> . 
+<http://dilab77.ionio.gr/swp/c17gram/resource/Τσόχου> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dilab77.ionio.gr/swp/c17gram/vocab#Lecturer> . 
+<http://dilab77.ionio.gr/swp/c17gram/resource/Ασφάλεια%20Πληροφοριακών%20Συστημάτων> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dilab77.ionio.gr/swp/c17gram/vocab#Module> . 
+_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dilab77.ionio.gr/swp/c17gram/vocab#Lecture> . 
+<http://dilab77.ionio.gr/swp/c17gram/resource/Στεφανιδάκης> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dilab77.ionio.gr/swp/c17gram/vocab#Lecturer> . 
+<http://dilab77.ionio.gr/swp/c17gram/resource/Προγραμματισμός%20Σημασιολογικού%20Ιστού> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dilab77.ionio.gr/swp/c17gram/vocab#Module> . 
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dilab77.ionio.gr/swp/c17gram/vocab#Lecture> . 
+<http://dilab77.ionio.gr/swp/c17gram/resource/Βλάμος> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dilab77.ionio.gr/swp/c17gram/vocab#Lecturer> . 
+<http://dilab77.ionio.gr/swp/c17gram/resource/Βιοπληροφορική> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dilab77.ionio.gr/swp/c17gram/vocab#Module> . 
+_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dilab77.ionio.gr/swp/c17gram/vocab#Lecture> . 
+<http://dilab77.ionio.gr/swp/c17gram/resource/Πατέλη> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dilab77.ionio.gr/swp/c17gram/vocab#Lecturer> . 
+<http://dilab77.ionio.gr/swp/c17gram/resource/Ηλεκτρονική%20Επιχειρηματικότητα> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dilab77.ionio.gr/swp/c17gram/vocab#Module> . 
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dilab77.ionio.gr/swp/c17gram/vocab#Lecture> . 
+<http://dilab77.ionio.gr/swp/c17gram/resource/Αυλωνίτης> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dilab77.ionio.gr/swp/c17gram/vocab#Lecturer> . 
+<http://dilab77.ionio.gr/swp/c17gram/resource/Προσομοίωση%20Μοντελοποίηση> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dilab77.ionio.gr/swp/c17gram/vocab#Module> . 
+_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dilab77.ionio.gr/swp/c17gram/vocab#Lecture> . 
+<http://dilab77.ionio.gr/swp/c17gram/resource/Κερμανίδου> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dilab77.ionio.gr/swp/c17gram/vocab#Lecturer> . 
+<http://dilab77.ionio.gr/swp/c17gram/resource/Τεχνητή%20Νοημοσύνη> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dilab77.ionio.gr/swp/c17gram/vocab#Module> . 
