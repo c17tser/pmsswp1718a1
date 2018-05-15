@@ -1,7 +1,7 @@
 # Το αρχείο Turtle του λεξιλογίου RDFS που περιγράφει
 # τις κλάσεις και τις ιδιότητες του ωρολογίου προγράμματος.
 
-@prefix : <http://example.com/owl/families/> .
+@prefix : <http://dilab77.ionio.gr/user/c17gram/myvocab#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -11,10 +11,10 @@
 
 
 
- :Lecturer  rdf:type owl:Class .
+ :Lecturer  rdf:type rdf:Class .
  :Lecturer  rdfs:comment
           "Represents the set of all Lecturers."^^xsd:string .
- :hasModule rdf:type owl:ObjectProperty .
+ :hasModule rdf:type rdf:ObjectProperty .
 
  :hasModule rdfs:domain :Lecturer ;
             rdfs:range xsd:string .
@@ -22,31 +22,47 @@
  :Lecturer  rdfs:subClassOf    foaf:Person . 
  :Lecturer   rdfs:range    :Lecture .
 
- :Lecture  rdf:type owl:Class .
+ :Lecture  rdf:type rdf:Class .
  :Lecture  rdfs:comment
           "Represents the set of all Lectures."^^xsd:string .
 
- :hasTime rdfs:domain :Lecture ;
-            rdfs:range xsd:time .
+ 
 
-
- :Room  rdf:type owl:Class .
+ :Room  rdf:type rdf:Class .
  :Room  rdfs:comment
           "Represents the set of all Teaching Rooms."^^xsd:string .
 
- :roomName rdfs:domain :Room;
-           rdfs:range xsd:string .
  
 
- :Module  rdf:type owl:Class .
+ :Module  rdf:type rdf:Class .
  :Module  rdfs:comment
           "Represents the set of all Modules."^^xsd:string .
 
- :moduleName rdfs:domain :Module;
-           rdfs:range xsd:string .
      
  uni:host   rdfs:range    :Module .
 
+ :Μάθημα rdf:type rdf:Property .
+ :Μάθημα rdfs:domain :Lecture .
+ :Μάθημα rdfs:range :Module .
 
+ :Ημέρα rdf:type rdf:Property .
+ :Ημέρα rdfs:domain :Lecture .
+ :Ημέρα rdfs:range xsd:string .
+
+ :Καθηγητής rdf:type rdf:Property .
+ :Καθηγητής rdfs:domain :Module .
+ :Καθηγητής rdfs:range :Lecturer .
+
+ :Αίθουσα rdf:type rdf:Property .
+ :Αίθουσα rdfs:domain :Lecture .
+ :Αίθουσα rdfs:range :Room .
+
+ :Έναρξη rdf:type rdf:Property .
+ :Έναρξη rdfs:domain :Lecture .
+ :Έναρξη rdfs:range xsd:time .
+
+ :Λήξη rdf:type rdf:Property .
+ :Λήξη rdfs:domain :Lecture .
+ :Λήξη rdfs:range xsd:time .
 
 
